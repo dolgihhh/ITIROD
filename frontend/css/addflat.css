@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Coiny', cursive;
+    font-size: 48px;
+
+}
+
+.addflat{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.addflat h2{
+    font-size: 48px;
+}
+.addflat__form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.addflat__form-wrapper {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    background-color: rgba(198, 160, 64, 0.4); 
+    border: 2px solid black;
+    border-radius: 45px;
+}
+
+.addflat__form-button{
+    font-size: 36px;
+    font-family: 'Coiny', cursive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 65px;
+    width: 150px;
+    color: white;
+    border: none;
+    border-radius: 45px;
+    background-color: #689D3E;
+    cursor: pointer;
+}
+
+.addflat__form-item {
+    /* text-align: left; */
+    /* width: 50%; */
+    text-indent: 30px;
+    border: none;
+    height: 50px;
+    margin-left: 20px;
+    /* width: 500px; */
+    /* width: 100%; */
+    /* margin-top: 30px; */
+    font-family: 'Coiny', cursive;
+    font-size: 32px;
+    border-radius: 45px;
+    
+}
+.addflat__form-item:focus{
+    outline: none;
+}
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    width: 150px;
+    /* height: 70%; */
+    /* height: 40px; */
+    text-align: center;
+
+    border: none;
+    background-color: #689D3E;
+    color: white;
+    border-radius: 45px;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+
+.addflat__form-input{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#addflat__form-photo{
+    align-self: flex-start;
+    margin-left: 50px;
+}
+
+#addflat__form-photo label{
+    
+    margin-left: 20px;
+}
+
+#description{
+    font-size: 26px;
+    font-family: 'Coiny', cursive;
+    resize: none;
+    border-radius: 45px;
+    /* text-indent: 30px; */
+    padding-left: 25px;
+    margin-left: 20px;
+    border: none
+}
+
+#description:focus{
+    /* text-indent: 30px; */
+    outline: none
+}
+
+#addflat__form-des{
+    margin-bottom: 20px;
+}
+
+
+@media(max-width: 940px){
+    body {
+        font-size: 24px;
+    }
+    .addflat__form-wrapper {
+        width: 450px;
+    }
+    .addflat{
+        margin-top: 15px;
+    }
+    .addflat h2{
+        font-size: 24px;
+    }
+    .addflat__form-button{
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 32px;
+        width: 75px;
+    }
+    .addflat__form-item {
+        text-indent: 15px;
+        height: 25px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    .custom-file-upload {
+        width: 75px;
+        
+        padding: 3px 6px;
+    }
+    .addflat__form-input{
+        margin-top: 5px;
+    }
+    #addflat__form-photo{
+        margin-left: 25px;
+    }
+    
+    #addflat__form-photo label{
+        
+        margin-left: 10px;
+    }
+    
+    #description{
+        font-size: 13px;
+        /* text-indent: 15px; */
+        margin-left: 10px;
+    }
+    
+    /* #description:focus{
+        text-indent: 15px;
+    } */
+    
+    #addflat__form-des{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media(max-width: 475px){
+    body {
+        font-size: 18px;
+    }
+    .addflat__form-wrapper {
+        width: 337px;
+    }
+    .addflat{
+        margin-top: 11px;
+    }
+    .addflat h2{
+        font-size: 18px;
+    }
+    .addflat__form-button{
+        font-size: 13px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        height: 24px;
+        width: 56px;
+    }
+    .addflat__form-item {
+        text-indent: 11px;
+        height: 18px;
+        margin-left: 7px;
+        font-size: 12px;
+    }
+    .custom-file-upload {
+        width: 56px;
+        
+        padding: 2px 3px;
+    }
+    .addflat__form-input{
+        margin-top: 3px;
+    }
+    #addflat__form-photo{
+        margin-left: 19px;
+    }
+    
+    #addflat__form-photo label{
+        
+        margin-left: 7px;
+    }
+    
+    #description{
+        font-size: 10px;
+        /* text-indent: 11px; */
+        margin-left: 7px;
+    }
+    
+    /* #description:focus{
+        text-indent: 11px;
+    } */
+    
+    #addflat__form-des{
+        margin-bottom: 7px;
+    }
+}

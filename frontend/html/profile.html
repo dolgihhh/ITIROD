@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/profile.css"/>
+    <title>RentaBY</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="header__logo">
+            <a href="main.html">RentaBY</a>
+        </div>
+        <div class="header__user">
+            <div class="header__user-logout">
+                <a href="#" onclick="javascript:Logout()">logout</a> 
+            </div>
+            <div class="header__user-name">
+                <!-- <span>Hello, Pavel</span> -->
+                <span  id="hello-user"></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="profile">
+            <form class="profile__form" id="profile-form" action="javascript:UpdateUser()">
+                <h2>Profile</h2>
+                <!-- <input class="profile__form-item" type="email" name="email" id="email" placeholder="test@mail.ru" required disabled> -->
+                <input class="profile__form-item" type="email" name="email" id="email" disabled>
+                <input class="profile__form-item" type="text" name="name" id="name" disabled>
+                <!-- <input class="profile__form-item" type="text" name="name" id="name" placeholder="Pavel" required disabled> -->
+                <input class="profile__form-item" type="password" name="old-password" id="old-password" placeholder="Enter old password" required disabled>
+                <input class="profile__form-item" type="password" name="new-password" id="new-password" placeholder="Enter new password" disabled>
+                <div class="profile__form-buttons">
+                    <button class="profile__form-changebtn" type="button" onclick="javascript:Edit()">Edit</button>
+                    <button class="profile__form-savebtn" type="submit" disabled>Save</button>
+                </div>
+            </form>
+        </section>
+        <section class="favsec">
+            <h2 class="favsec__title">Favourite:</h2>
+            <div class="favsec__flats">
+                <div class="favsec__flat">
+                    <img src="../images/flat.jpg" alt="" height="270px" width="450px">
+                    <div class="favsec__flat-desc">
+                        <span>Adress : st.Nemiga 23</span>
+                        <span>Flats : 3</span>
+                        <span>Apartment area : 34m2</span>
+                        <span>Price : 400$</span>
+                    </div>
+                    <div class="favsec__flat-btn">
+                        <button class="favsec__flat-morebtn">More</button>
+                        <button class="favsec__flat-delbtn">Delete</button>
+                    </div>
+                </div>
+                <div class="favsec__flat">
+                    <img src="../images/flat.jpg" alt="" height="270px" width="450px">
+                    <div class="favsec__flat-desc">
+                        <span>Adress : st.Nemiga 23</span>
+                        <span>Flats : 3</span>
+                        <span>Apartment area : 34m2</span>
+                        <span>Price : 400$</span>
+                    </div>
+                    <div class="favsec__flat-btn">
+                        <button class="favsec__flat-morebtn">More</button>
+                        <button class="favsec__flat-delbtn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="myflatsec">
+            <div class="addflat">
+                <h2 class="myflatsec__title">My flats:</h2>
+                <button class="myflatsec__button" onclick="window.location.href='addflat.html'">Add</button>
+            </div>
+            <!-- <h2 class="myflatsec__title">You didnt add any flat</h2> -->
+            <div class="myflatsec__flats">
+                <div class="myflatsec__flat">
+                    <img src="../images/flat.jpg" alt="" height="270px" width="450px">
+                    <div class="myflatsec__flat-desc">
+                        <span>Adress : st.Nemiga 23</span>
+                        <span>Flats : 3</span>
+                        <span>Apartment area : 34m2</span>
+                        <span>Price : 400$</span>
+                    </div>
+                    <div class="myflatsec__flat-btn">
+                        <button class="myflatsec__flat-morebtn">More</button>
+                        <button class="myflatsec__flat-editbtn">Edit</button>
+                        <button class="myflatsec__flat-delbtn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/profile-form.js"></script>
+    <script src="../js/profile-flats.js"></script>
+</body>
+</html>

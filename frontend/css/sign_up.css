@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Coiny', cursive;
+    font-size: 48px;
+
+}
+
+html, body {
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    background-color: rgba(198, 160, 64, 0.4); 
+    height: 80px;
+    padding: 20px 100px 20px 100px;
+    align-items: center;
+    border-bottom: 3px solid black;   
+}
+
+.signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.signup__form {
+    /* width: 520px; */
+    max-width: 520px;
+    width: 100%;
+    padding: 0 40px;
+    /* height: 400px; */
+    background-color: rgba(198, 160, 64, 0.4); 
+    border: 2px solid black;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 100px 0 100px; */
+}
+
+.signup__form h2 {
+    padding-top: 15px;
+    font-size: 48px;
+}
+
+.signup__form-item {
+    /* text-align: left; */
+    width: 100%;
+    text-indent: 30px;
+    border: none;
+    height: 70px;
+    /* width: 500px; */
+    /* width: 100%; */
+    margin-top: 30px;
+    font-family: 'Coiny', cursive;
+    font-size: 32px;
+    border-radius: 45px;
+    
+}
+
+.signup__form-item:focus{
+    outline: none;
+}
+
+.signup__form-button {
+    font-family: 'Coiny', cursive;
+    font-size: 32px;
+    align-self: flex-end; 
+    margin-top: 30px;
+    /* margin-right: 102px; */
+    height: 65px;
+    width: 200px;
+    border-radius: 45px;
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: #689D3E;
+    cursor: pointer;
+}
+
+.signup__form-button:hover{
+    border: black 2px solid;
+    color: black;
+    background-color: #C6A040;
+}
+
+.signup__form h5 {
+    padding-top: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.signup__form a {
+    padding-top: 10px;
+    font-size: 36px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+@media(max-width:700px){
+    .signup {
+        padding-top: 30px; 
+    }
+    .signup__form {
+        max-width: 400px;
+    }
+}
+
+@media(max-width:550px){
+    .signup__form {
+        max-width: 350px;
+        padding: 0 20px;
+    }
+    .signup {
+        padding-top: 10px; 
+    }
+    .header {
+        height: 80px;
+        padding: 20px 50px;  
+        font-size: 36px;
+    }
+    .signup__form-item {
+        font-size: 24px;
+        height: 50px;
+    }
+    .signup__form h2 {
+        font-size: 36px;
+    }
+    .signup__form h5 {
+        font-size: 20px;
+    }
+    .signup__form a {
+        font-size: 24px;
+    }
+    .signup__form-button {
+        font-size: 20px;
+        height: 40px;
+        width: 150px;
+    }
+}
+
+@media(max-height:920px){
+    .signup__form {
+        max-width: 350px;
+        padding: 0 20px;
+    }
+    .signup {
+        padding-top: 10px; 
+    }
+    .header {
+        height: 80px;
+        padding: 20px 50px;  
+        font-size: 36px;
+    }
+    .signup__form-item {
+        font-size: 24px;
+        height: 50px;
+    }
+    .signup__form h2 {
+        font-size: 36px;
+    }
+    .signup__form h5 {
+        font-size: 20px;
+    }
+    .signup__form a {
+        font-size: 24px;
+    }
+    .signup__form-button {
+        font-size: 20px;
+        height: 40px;
+        width: 150px;
+    }
+}
+
+@media(max-height:750px){
+    .signup__form-item {
+        font-size: 24px;
+        height: 50px;
+        margin-top: 15px;
+    }
+    .signup__form-button {
+        margin-top: 15px;
+    }
+    
+}

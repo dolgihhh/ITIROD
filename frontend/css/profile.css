@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Coiny', cursive;
+    font-size: 48px;
+
+}
+
+.header {
+    display: flex;
+    background-color: rgba(198, 160, 64, 0.4); 
+    height: 80px;
+    padding: 20px 100px 20px 100px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 3px solid black;
+}
+
+.header__user {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    flex-wrap: wrap;
+}
+
+.header__user a {
+    position: relative;
+}
+
+.header__user a::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #000;
+    width: 0;
+    transition: 0.3s;
+}
+
+.header__user a:hover:after {
+    width: 100%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.profile__form {
+    /* width: 520px; */
+    max-width: 520px;
+    width: 100%;
+    padding: 0 40px;
+    /* height: 400px; */
+    background-color: rgba(198, 160, 64, 0.4); 
+    border: 2px solid black;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 100px 0 100px; */
+}
+
+.profile__form h2 {
+    padding-top: 15px;
+    font-size: 48px;
+}
+
+.profile__form-item {
+    /* text-align: left; */
+    width: 100%;
+    text-indent: 30px;
+    border: none;
+    height: 70px;
+    /* width: 500px; */
+    /* width: 100%; */
+    margin-top: 30px;
+    font-family: 'Coiny', cursive;
+    font-size: 32px;
+    border-radius: 45px;
+    
+}
+
+.profile__form-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.profile__form-changebtn{
+    font-family: 'Coiny', cursive;
+    font-size: 32px;
+    height: 65px;
+    width: 200px;
+    border-radius: 45px;
+    border: none;
+    text-align: center;
+    color: black;
+    background-color: #E9EC5B;
+    cursor: pointer;
+}
+
+.profile__form-savebtn{
+    font-family: 'Coiny', cursive;
+    font-size: 32px;
+    height: 65px;
+    width: 200px;
+    border-radius: 45px;
+    border: none;
+    text-align: center;
+    color: white;
+    /* background-color: #689D3E; */
+    background-color: #AFAFAF;
+    cursor: pointer;
+}
+
+.profile__form-item:focus{
+    outline: none;
+}
+
+input:disabled{
+    background-color:whitesmoke;
+}
+
+.favsec, .myflatsec{
+    margin-top: 60px;
+    padding: 0 100px;
+}
+.favsec__flats, .myflatsec__flats{
+    /* padding: 0 100px; */
+    gap: 100px 20px;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    justify-content: space-between;
+    /* width: 100vw; */
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.favsec__flat, .myflatsec__flat{
+    max-width: 450px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    font-size: 24px;
+    /* margin: 30px; */
+    /* margin-bottom: 50px; */
+}
+
+
+.favsec__flat img, .myflatsec__flat img{
+    border-bottom: 3px solid black;
+}
+
+.favsec__flat-desc, .myflatsec__flat-desc{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: rgba(198, 160, 64, 0.4);
+}
+
+.favsec__flat-btn, .myflatsec__flat-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px 20px;
+    background-color: rgba(198, 160, 64, 0.4);
+}
+
+.favsec__title , .myflatsec__title{
+    font-size: 48px;
+}
+
+
+.favsec__flat-morebtn, .myflatsec__flat-morebtn{
+    width: 95px;
+    height: 38px;
+    color: black;
+    font-family: 'Coiny', cursive;
+    font-size: 24px;
+    border-radius: 45px;
+    border: none;
+    background-color: #4BA9B6;
+    /* align-self: flex-start; */
+    /* justify-self: flex-start; */
+    align-self: end;
+    cursor: pointer;
+}
+
+.myflatsec__flat-editbtn{
+    width: 95px;
+    height: 38px;
+    color: black;
+    font-family: 'Coiny', cursive;
+    font-size: 24px;
+    border-radius: 45px;
+    border: none;
+    background-color: #E9EC5B;
+    /* align-self: flex-start; */
+    /* justify-self: flex-start; */
+    align-self: end;
+    cursor: pointer;
+}
+
+.favsec__flat-delbtn, .myflatsec__flat-delbtn{
+    align-self: end;
+    width: 105px;
+    height: 45px;
+    color: black;
+    font-family: 'Coiny', cursive;
+    font-size: 24px;
+    border-radius: 45px;
+    border: none;
+    background-color: #A7361D;
+    cursor: pointer;
+}
+
+.addflat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.myflatsec__button{
+    width: 300px;
+    height: 50px;
+    border-radius: 45px;
+    border: none;
+    color: white;
+    background-color: #689D3E;
+    margin-left: 30px;
+    font-family: 'Coiny', cursive;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+@media(max-width: 1700px){
+    .header{
+        font-size: 36px;
+    }
+    .header__user {
+        width: 375px;
+    }
+    .favsec__flats, .myflatsec__flats{
+        grid-template-columns: repeat(3, 340px);
+        margin-top: 25px;
+    }
+    .favsec__flat, .myflatsec__flat{
+        font-size: 18px;
+    }
+    .favsec__flat img, .myflatsec__flat img{
+        height: 200px;
+        width:340px;
+    }
+    .favsec__flat-btn, .myflatsec__flat-btn{
+        padding-bottom: 15px;
+    }
+    .favsec__flat-morebtn, .myflatsec__flat-morebtn, .myflatsec__flat-editbtn{
+        width: 67px;
+        height: 27px;
+        font-size: 18px;
+    }
+    .favsec__flat-addbtn, .myflatsec__flat-addbtn{
+        width: 67px;
+        height: 37px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 1300px){
+    .favsec__flats, .myflatsec__flats{
+        grid-template-columns: repeat(2, 340px);
+        justify-content: space-around;
+    }
+}
+
+
+@media(max-width: 1120px){
+    .favsec, .myflatsec{
+        padding: 0 70px;
+    }
+}
+
+@media(max-width: 920px){
+    .header__user {
+        width: 380px;
+    }
+    .header {
+        padding: 20px 60px 
+    }
+    .favsec__flats, .myflatsec__flats{
+        gap: 70px 20px;
+        padding: 10px;
+    }
+}
+
+@media(max-width:750px){
+    .header{
+        font-size: 28px;
+        padding: 20px 40px;
+    }
+    .header__user {
+        width: 290px;
+    }
+    .favsec__flats, .myflatsec__flats{
+        grid-template-columns: repeat(1, 340px);
+        
+    }
+    .profile__form {
+        max-width: 400px;
+    }
+    .profile__form-changebtn, .profile__form-savebtn{
+        font-size: 26px;
+        height: 50px;
+        width: 160px;
+    }
+}
+
+@media(max-width:550px){
+    .header{
+        padding: 20px 20px;
+    }
+    .header__user {
+        width: 210px;
+        justify-content: center;
+    }
+    .favsec__flats, .myflatsec__flats{
+        margin-top: 0;
+    }
+    .profile__form {
+        max-width: 300px;
+    }
+    .favsec__title, .myflatsec__title{
+        font-size: 36px;
+    }
+    .myflatsec__button{
+        width: 200px;
+        height: 40px;
+        margin-left: 10px;
+        font-size: 26px;
+    }
+    .profile__form-item {
+        width: 100%;
+        text-indent: 20px;
+        border: none;
+        height: 50px;
+        font-size: 24px;
+    }
+    .favsec, .myflatsec{
+        padding: 10px;
+    }
+    .favsec__title, .myflatsec__title{
+        margin-left: 30px;
+    }
+    .profile__form-changebtn, .profile__form-savebtn{
+        font-size: 22px;
+        height: 40px;
+        width: 130px;
+    }
+    .profile__form {
+        padding: 0 20px;
+    }
+    .profile__form h2{
+        font-size: 36px;
+    }
+}

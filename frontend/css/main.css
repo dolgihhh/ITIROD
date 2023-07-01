@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Coiny', cursive;
+    font-size: 48px;
+
+}
+
+/* .header {
+    display: flex;
+    background-color: rgba(198, 160, 64, 0.4); 
+    height: 80px;
+    padding: 20px 100px 20px 100px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 3px solid black;
+}
+
+.header__user {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    flex-wrap: wrap;
+}
+
+.header__user a {
+    position: relative;
+}
+
+.header__user a::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #000;
+    width: 0;
+    transition: 0.3s;
+}
+
+.header__user a:hover:after {
+    width: 100%;
+} */
+
+.sort{
+    display: flex;
+    justify-content: left;
+    padding-top: 20px;
+    padding-left: 100px;
+}
+
+.sort__form{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 1300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort__form-item{
+    /* align-self: center; */
+    display: flex;
+    align-items: center;
+
+}
+
+.sort__form-item label{
+    color: #C6A040;
+}
+
+.sort__form-item select{
+    height: 35px;
+    width: 230px;
+    margin-left: 20px;
+    border-radius: 45px;
+    border: 3px solid black;
+    font-family: 'Coiny', cursive;
+    font-size: 24px;
+    /* text-indent: 10px; */
+    text-align: center;
+}
+
+.sort__form-button {
+    font-family: 'Coiny', cursive;
+    font-size: 32px;
+    height: 45px;
+    width: 220px;
+    border-radius: 45px;
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: #C6A040;
+    color: #000;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.sort__form-button:hover{
+    color: white;
+}
+
+.flats{
+    padding: 0 100px;
+    gap: 100px 20px;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    justify-content: space-between;
+    /* width: 100vw; */
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.flats__flat{
+    max-width: 450px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    font-size: 24px;
+    /* margin: 30px; */
+    /* margin-bottom: 50px; */
+}
+
+
+.flats__flat img{
+    border-bottom: 3px solid black;
+}
+
+.flats__flat-desc{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: rgba(198, 160, 64, 0.4);
+}
+
+.flats__flat-btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 20px 20px;
+    background-color: rgba(198, 160, 64, 0.4);
+}
+
+.flats__flat-morebtn{
+    width: 90px;
+    height: 35px;
+    color: black;
+    font-family: 'Coiny', cursive;
+    font-size: 24px;
+    border-radius: 45px;
+    border: none;
+    background-color: #4BA9B6;
+    /* align-self: flex-start; */
+    /* justify-self: flex-start; */
+    align-self: end;
+    cursor: pointer;
+}
+
+.flats__flat-addbtn{
+    align-self: end;
+    width: 90px;
+    height: 50px;
+    color: black;
+    font-family: 'Coiny', cursive;
+    font-size: 24px;
+    border-radius: 45px;
+    border: none;
+    background-color: #689D3E;
+    cursor: pointer;
+}
+
+@media(max-width: 1700px){
+    /* .header{
+        font-size: 36px;
+    }
+    .header__user {
+        width: 375px;
+    } */
+    .sort__form{
+        width: 1000px;
+        font-size: 36px;
+    }
+    .sort__form-item select{
+        width: 150px;
+        margin-left: 15px;
+        font-size: 18px;
+    }
+    .sort__form-button {
+        font-size: 24px;
+        height: 35px;
+        width: 180px;
+    }
+    .flats{
+        padding: 0 80px;
+        grid-template-columns: repeat(3, 340px);
+        margin-top: 25px;
+    }
+    .flats__flat{
+        font-size: 18px;
+    }
+    .flats__flat img{
+        height: 200px;
+        width:340px;
+    }
+    .flats__flat-btn{
+        padding-bottom: 15px;
+    }
+    .flats__flat-morebtn{
+        width: 67px;
+        height: 27px;
+        font-size: 18px;
+    }
+    .flats__flat-addbtn{
+        width: 67px;
+        height: 37px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 1300px){
+    .flats{
+        grid-template-columns: repeat(2, 340px);
+        /* justify-content: center; */
+        justify-content: space-around;
+        /* padding: 0; */
+    }
+}
+
+
+@media(max-width: 1120px){
+    .sort__form{
+        width: 810px;
+    }
+    .flats{
+        padding: 0 70px;
+    }
+}
+
+@media(max-width: 920px){
+    .sort{
+        padding-left: 0px;
+    }
+    .sort__form{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .sort__form-button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /* .header__user {
+        width: 340px;
+    }
+    .header {
+        padding: 20px 60px 
+    } */
+    .flats{
+        gap: 70px 20px;
+        padding: 10px;
+    }
+}
+
+@media(max-width:750px){
+    /* .header{
+        font-size: 28px;
+    }
+    .header__user {
+        width: 270px;
+    } */
+    .sort__form{
+        font-size: 28px;
+    }
+    .flats{
+        grid-template-columns: repeat(1, 340px);
+    }
+}
+
+@media(max-width:550px){
+    /* .header{
+        padding: 20px 20px;
+    }
+    .header__user {
+        width: 210px;
+        justify-content: center;
+    } */
+    .flats{
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Coiny', cursive;
+    font-size: 48px;
+
+}
+
+.flat{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.flat__img img{
+    height: 600px;
+    width: 800px;
+    border-radius: 45px;
+    border: 2px solid black;
+}
+
+.flat__desc{
+    font-size: 36px;
+    /* display: flex;
+    align-items: flex-start; */
+    height: 600px;
+    width: 800px;
+    border-radius: 45px;
+    border: 2px solid black;
+    background-color: rgba(198, 160, 64, 0.4); 
+}
+
+.flat__desc-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.button-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.add-button{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    height: 65px;
+    width: 300px;
+    background-color: #689D3E;
+    border-radius: 45px;
+    color:white;
+    font-family: 'Coiny', cursive;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+@media(max-width: 1700px){
+    .flat__img img{
+        height: 480px;
+        width: 640px;
+    }
+    .flat__desc{
+        font-size: 28px;
+        /* display: flex;
+        align-items: flex-start; */
+        height: 480px;
+        width: 640px;
+    }
+    .add-button{
+        margin-top: 32px;
+        height: 52px;
+        width: 240px;
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 1350px){
+    .flat__img img{
+        height: 384px;
+        width: 512px;
+    }
+    .flat__desc{
+        font-size: 22px;
+        /* display: flex;
+        align-items: flex-start; */
+        height: 384px;
+        width: 512px;
+    }
+    .add-button{
+        margin-top: 25px;
+        height: 42px;
+        width: 192px;
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 1080px){
+    .flat__img img{
+        height: 307px;
+        width: 410px;
+    }
+    .flat__desc{
+        font-size: 18px;
+        /* display: flex;
+        align-items: flex-start; */
+        height: 307px;
+        width: 410px;
+    }
+    .add-button{
+        margin-top: 20px;
+        height: 33px;
+        width: 153px;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 860px){
+    .flat{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .add-button{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 440px){
+    .flat__img img{
+        height: 245px;
+        width: 328px;
+    }
+    .flat__desc{
+        font-size: 14px;
+        height: 245px;
+        width: 328px;
+    }
+}

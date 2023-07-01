@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/header.css"/>
+    <title>RentaBY</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="header__logo">
+            <a href="main.html">RentaBY</a>
+        </div>
+        <div class="header__user">
+            <div class="header__user-logout">
+                <a href="#" onclick="javascript:Logout()">logout</a> 
+            </div>
+            <div class="header__user-profile">
+                <a href="profile.html">My profile</a> 
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="sort">
+            <form class="sort__form" id="sort-form" action="javascript:GetFlats()">
+                <div class="sort__form-item">
+                    <label for="city">City: </label>
+                    <select name="city" id="city">
+                        <option value="clear" selected></option>
+                        <!-- <option value="Minsk">Minsk</option>
+                        <option value="Grodno">Grodno</option>
+                        <option value="Vitebsk">Vitebsk</option> -->
+                    </select>
+                </div>
+                <div class="sort__form-item">
+                    <label for="city">Order by: </label>
+                    <select name="order" id="order">
+                        <option value="clear" selected></option>
+                        <option value="price">price</option>
+                        <option value="area">area</option>
+                        <option value="rooms">flats</option>
+                    </select>
+                </div>
+                <button class="sort__form-button" type="submit">Apply</button>
+            </form>
+        </section>
+        <section class="flats" id="flats">
+             <div class="flats__flat">
+                <img src="../images/flat.jpg" alt="" height="270px" width="450px">
+                <div class="flats__flat-desc">
+                    <span>Adress : st.Nemiga 23</span>
+                    <span>Flats : 3</span>
+                    <span>Apartment area : 34m2</span>
+                    <span>Price : 400$</span>
+                </div>
+                <div class="flats__flat-btn">
+                    <button class="flats__flat-morebtn">More</button>
+                    <button class="flats__flat-addbtn">Add</button>
+                </div>
+            </div>
+              <div class="flats__flat">
+                <img src="../images/flat.jpg" alt="" height="270px" width="450px">
+                <div class="flats__flat-desc">
+                    <span>Adress : st.Nemiga 23</span>
+                    <span>Flats : 3</span>
+                    <span>Apartment area : 34m2</span>
+                    <span>Price : 400$</span>
+                </div>
+                <div class="flats__flat-btn">
+                    <button class="flats__flat-morebtn">More</button>
+                    <button class="flats__flat-addbtn">Add</button>
+                </div>
+            </div>
+              <div class="flats__flat">
+                <img src="../images/flat.jpg" alt="" height="270px" width="450px">
+                <div class="flats__flat-desc">
+                    <span>Adress : st.Nemiga 23</span>
+                    <span>Flats : 3</span>
+                    <span>Apartment area : 34m2</span>
+                    <span>Price : 400$</span>
+                </div>
+                <div class="flats__flat-btn">
+                    <button class="flats__flat-morebtn">More</button>
+                    <button class="flats__flat-addbtn">Add</button>
+                </div>
+            </div>
+              <div class="flats__flat">
+                <img src="../images/flat.jpg" alt="" height="270px" width="450px">
+                <div class="flats__flat-desc">
+                    <span>Adress : st.Nemiga 23</span>
+                    <span>Flats : 3</span>
+                    <span>Apartment area : 34m2</span>
+                    <span>Price : 400$</span>
+                </div>
+                <div class="flats__flat-btn">
+                    <button class="flats__flat-morebtn">More</button>
+                    <button class="flats__flat-addbtn">Add</button>
+                </div>
+            </div>
+            <div class="flats__flat">
+                <img src="../images/flat.jpg" alt="" height="270px" width="450px">
+                <div class="flats__flat-desc">
+                    <span>Adress : st.Nemiga 23</span>
+                    <span>Flats : 3</span>
+                    <span>Apartment area : 34m2</span>
+                    <span>Price : 400$</span>
+                </div>
+                <div class="flats__flat-btn">
+                    <button class="flats__flat-morebtn">More</button>
+                    <button class="flats__flat-addbtn">Add</button>
+                </div>
+            </div>
+            <div class="flats__flat">
+                <img src="../images/flat.jpg" alt="" height="270px" width="450px">
+                <div class="flats__flat-desc">
+                    <span>Adress : st.Nemiga 23</span>
+                    <span>Flats : 3</span>
+                    <span>Apartment area : 34m2</span>
+                    <span>Price : 400$</span>
+                </div>
+                <div class="flats__flat-btn">
+                    <button class="flats__flat-morebtn">More</button>
+                    <button class="flats__flat-addbtn">Add</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+</html>

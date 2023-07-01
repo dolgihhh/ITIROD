@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/addflat.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/header.css"/>
+    <title>Edit flat</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="header__logo">
+            <a href="index.html">RentaBY</a>
+        </div>
+        <div class="header__user">
+            <div class="header__user-logout">
+                <a href="#" onclick="javascript:Logout()">logout</a> 
+            </div>
+            <div class="header__user-profile">
+                <a href="profile.html">My profile</a> 
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="addflat">
+            <form class="addflat__form" id="editflat-form" action="javascript:EditFlat()">
+                <div class="addflat__form-wrapper">
+                    <h2>Edit flat</h2>
+                    <div class="addflat__form-input">
+                        <label for="email">City</label>
+                        <input class="addflat__form-item" type="text" name="city" id="city" required>
+                    </div>
+                    <div class="addflat__form-input">
+                        <label for="adress">Adress</label>
+                        <input class="addflat__form-item" type="text" name="adress" id="adress" required>
+                    </div>
+                    <div class="addflat__form-input">
+                        <label for="rooms">Rooms</label>
+                        <input class="addflat__form-item" type="number" name="rooms" id="rooms" min="1" required>
+                    </div>
+                    <div class="addflat__form-input"> 
+                        <label for="area">Area(m2)</label>
+                        <input class="addflat__form-item" type="number" name="area" id="area" min="1" required>
+                    </div>
+                    <div class="addflat__form-input">
+                        <label for="price">Price($)</label>
+                        <input class="addflat__form-item" type="number" name="price" id="price" min="1" required>
+                    </div>
+                    <div class="addflat__form-input">
+                        <label for="phone_number">Phone number</label>
+                        <input class="addflat__form-item" type="text" name="phone_number" id="phone_number" maxlength="13" required>
+                    </div>
+                    <div class="addflat__form-input">
+                        <label for="owner_name">Owner name</label>
+                        <input class="addflat__form-item" type="text" name="owner_name" id="owner_name" required>
+                    </div>
+                    <div class="addflat__form-input" id="addflat__form-photo">
+                        <span>Photo</span>
+                        <label class="custom-file-upload" for="photo">+</label>
+                        <input type="file" name="photo" id="photo" onchange="onFileSelected(event)">
+                        <div id="photo_warning"></div>
+                    </div>
+                    <div class="addflat__form-input" id="addflat__form-des">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="3" cols="30" required></textarea>
+                    </div>
+                </div>
+                <button class="addflat__form-button" type="submit">Edit</button>
+            </form>
+    </section>
+    </main>
+    <script src="https://js.upload.io/upload-js/v2"></script>
+    <script src="../js/editflat.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/sign_up.css"/>
+    <title>Sign up</title>
+</head>
+<body>
+    <header class="header"> 
+        <div class="header__logo">
+            <a href="index.html">RentaBY</a>
+        </div>
+    </header>
+    <section class="signup">
+            <form class="signup__form" id="signup-form" action="javascript:Register()">
+                <h2>Sign up</h2>
+                <input class="signup__form-item" type="email" name="email" id="email" placeholder="Enter email" required>
+                <input class="signup__form-item" type="text" name="name" id="name" placeholder="Enter name" required>
+                <input class="signup__form-item" type="password" name="password" id="password" placeholder="Enter password" required>
+                <input class="signup__form-item" type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
+                <button class="signup__form-button" type="submit">Register</button>
+                <h5>
+                    Already have an account?
+                </h5>
+                <a href="login.html">Login</a>
+            </form>
+    </section>
+    <script src="../js/signup.js"></script>
+</body>
+</html>

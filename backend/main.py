@@ -3,6 +3,7 @@ from pydantic import BaseModel, Field
 from users.router import router as router_users
 from flats.router import router as router_flats
 from favourites.router import router as router_favourites
+from fastapi.middleware.cors import CORSMiddleware
 
 
 app = FastAPI(
@@ -14,6 +15,14 @@ app.include_router(router_flats)
 app.include_router(router_favourites)
 
 
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # fake_users = [
 #     {"id": 1, "name": "Pasha", "email": "dolgihgod@mail.ru", "password": "02032003"},
 #     {"id": 2, "name": "Dima", "email": "dima@mail.ru", "password": "Dolgih2003"},

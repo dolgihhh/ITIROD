@@ -55,7 +55,7 @@ async def get_user_favorite_flats_(user_id: int, session: AsyncSession = Depends
         result = await session.execute(query_for_checking_user)
         user_id_dict = [dict(r._mapping) for r in result]
         if len(user_id_dict) == 0:
-            return JSONResponse(content={"message": "Wrong user_id, user doesnt exist"}, status_code=400)  
+            return JSONResponse(content=[{"message": "Wrong user_id, user doesnt exist"}], status_code=400)  
         query = select(favourites.c.flat_id).where(favourites.c.user_id == user_id)
         result = await session.execute(query)
         flat_id_dict = [dict(r._mapping) for r in result]
@@ -63,7 +63,7 @@ async def get_user_favorite_flats_(user_id: int, session: AsyncSession = Depends
         for flat in flat_id_dict:
             flat_id_list.append(flat.get('flat_id'))
         if len(flat_id_list) == 0:
-            return JSONResponse(content={"message": "User has 0 favourites"}, status_code=200)  
+            return JSONResponse(content=[{"message": "User has 0 favourites"}], status_code=200)  
         print(flat_id_list)
         print(flat_id_dict)
         query = select(flats).where(flats.c.id.in_(flat_id_list))
